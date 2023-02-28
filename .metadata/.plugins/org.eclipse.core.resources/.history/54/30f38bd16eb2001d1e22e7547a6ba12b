@@ -1,6 +1,0 @@
-package io.github.curso.eurekaserver.config;
-
-@EnabledWebSecurity
-public class SecurityConfig {
-
-}
