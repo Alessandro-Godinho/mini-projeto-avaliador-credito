@@ -1,0 +1,5 @@
+package io.github.curso.eurekaserver.config;
+
+public class SecurityConfig {
+
+}

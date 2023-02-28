@@ -1,0 +1,8 @@
+// nome do container
+docker build --tag curso-cartoes .
+// run nome do container --network nome do network -e nomes dos arguments dockerfile passando o nome do container como argumentos
+-d para não gerar logs no powershell e o nome do imagem para ser rodado.
+obs: para rodar numa porta especifica utiliza a tag -p. ex-> (-p 8761:8761)
+docker run --name curso-cartoes --network curso-network -e RABBITMQ_SERVER=rabbitmq -e EUREKA_SERVER=curso-eureka -d curso-cartoes .
+//criar network para ligar os projetos e dependencias
+docker network create curso-network

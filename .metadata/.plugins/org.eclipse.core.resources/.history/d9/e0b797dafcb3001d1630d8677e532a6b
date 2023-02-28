@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: cartoes
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+mq:
+  queues:
+    EmissaoCartoes: EmissaoCartoes
+
+server:
+  port: 0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://alegodinho:123456@localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+mq:
+  queues:
+    EmissaoCartoes: EmissaoCartoes
